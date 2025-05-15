@@ -27,12 +27,17 @@
     <?php
         $experiencias = [
             [
-                "empresa" => "IFCE - CEDRO",
+                "empresa" => "IFCE - Inclusão Digital Através do Software Livre ",
                 "cargo" => "Bolsista",
                 "periodo" => "Nov. de 2023 – Maio. de 2024",
-                "descricao" => " O projeto  Inclusão Digital Através do Software Livre teve como objetivo ensinar e aprimoraros conhecimentos dos estudantes do EJA Educação de jovens e adultos. Utilizando ferramentas de software livre, como o linux, windows e aplicativos gratuitos.Durante o período de novembro de 2023 a maio de 2024, foram ofertados oficinas e treinamentos para desenvolver habilidades digitais essenciais. "
+                "descricao" => "O projeto Inclusão Digital Através do Software Livre teve como objetivo ensinar e aprimorar os conhecimentos dos estudantes do EJA (Educação de jovens e adultos). Utilizando ferramentas de software livre, como o Linux, Windows e aplicativos gratuitos. Durante o período de novembro de 2023 a maio de 2024, foram ofertados oficinas e treinamentos para desenvolver habilidades digitais essenciais."
             ],
-            // Adicione mais experiências conforme necessário
+            [
+                "empresa" => "IFCE - Lógica de programação",
+                "cargo" => "Participante",
+                "periodo" => "Ago. de 2022 – Dez. de 2022",
+                "descricao" => "Participação no curso de Lógica de Programação oferecido pelo IFCE, com carga horária de 60 horas. Desenvolvimento de habilidades básicas em programação, resolução de problemas computacionais e fundamentos de algoritmos. Aprendizado de conceitos essenciais para o desenvolvimento de software."
+            ]
         ];
         ?>
 
@@ -58,11 +63,29 @@
         <?php
         $cursos = [
             [
-                "nome" => "Nome do Curso/Formação",
-                "instituicao" => "Nome da Instituição",
-                "periodo" => "Ano Inicial - Ano Final"
+                "nome" => "Técnico em Informática",
+                "instituicao" => "IFCE",
+                "periodo" => "2019 - 2022",
+                "status" => "Concluído"
             ],
-            // Adicione mais cursos conforme necessário
+            [
+                "nome" => "Sistemas de Informação",
+                "instituicao" => "IFCE",
+                "periodo" => "2022 - 2026",
+                "status" => "Cursando"
+            ],
+            [
+                "nome" => "Técnico em Energias Renováveis",
+                "instituicao" => "IFCE",
+                "periodo" => "2024",
+                "status" => "Concluído"
+            ],
+            [
+                "nome" => "Técnico em Administração",
+                "instituicao" => "IFCE",
+                "periodo" => "2025 - 2026",
+                "status" => "Cursando"
+            ]
         ];
         ?>
 
@@ -70,7 +93,7 @@
             <ul>
                 <?php foreach ($cursos as $curso): ?>
                     <li>
-                        <h3><?php echo $curso["nome"]; ?></h3>
+                        <h3><?php echo $curso["nome"]; ?> - <?php echo $curso["status"]; ?></h3>
                         <h4><?php echo $curso["instituicao"]; ?></h4>
                         <p class="periodo"><?php echo $curso["periodo"]; ?></p>
                     </li>
@@ -87,18 +110,16 @@
 
         <?php
         $habilidades = [
-            "PHP" => 8,
+            "PHP" => 9.5,
             "JavaScript" => 6,
-            "CSS" => 7,
-            "Banco de Dados" => 6
-            // Avalie suas habilidades de 0 a 10
+            "CSS" => 8,
+            "Banco de Dados" => 10
         ];
 
         $hobbies = [
-            "Hobby 1" => 8,
-            "Hobby 2" => 6,
-            "Hobby 3" => 9
-            // Avalie seu nível de interesse de 0 a 10
+            "Hobby 1" => 7,
+            "Hobby 2" => 5,
+            "Hobby 3" => 3
         ];
         ?>
 
